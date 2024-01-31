@@ -11,7 +11,7 @@
         <table cellpadding="7">
             <tr>
                 <td>Name</td>
-                <td><input type="text" name="fname" required placeholder="Enter your name"></td>
+                <td><input type="text" name="fname" required placeholder="Enter your name" pattern="[A-Za-z]{1,}" title="Enter your correct name"></td>
             </tr>
             <tr>
                 <td>Email-id</td>
@@ -20,6 +20,10 @@
             <tr>
                 <td>Password</td>
                 <td><input type="password" name="pwd" required ></td>
+            </tr>
+            <tr>
+                <td>Enter mobile</td>
+                <td><input type="text" name="mobile" required pattern="[0-9]{10}" title="Enter correct mobile number"></td>
             </tr>
             <tr>
                 <td>Date of birth</td>
