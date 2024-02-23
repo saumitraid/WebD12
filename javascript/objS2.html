@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            var n1=document.getElementById('n1').value
+            var n2=document.getElementById('n2').value
+            n1=parseInt(n1)+parseInt(n2);
+            // alert('Addtion is '+n1);
+            document.getElementById('result').innerHTML='Addtion is '+n1;
+        }
+    </script>
+</head>
+<body>
+    <form name="frm">
+        Enter 1st number<input type="number" name="n1" id="n1"><br>
+        Enter 2nd number<input type="number" name="n2" id="n2"><br>
+        <button type="button" onclick="add()">Submit</button><br>
+        <label for="result" id="result"></label>
+    </form>
+Enter Password
+</body>
+</html>

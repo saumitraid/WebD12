@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function chekPass(){
+            var plen=document.getElementById('pwd').value.length;
+            if(plen<6){
+                document.getElementById('msg').style.color='red';
+                document.getElementById('msg').innerHTML='Password is weak';
+            }else if(plen>=6 && plen<9){
+                document.getElementById('msg').innerHTML='Password is medium';
+            }else{
+                document.getElementById('msg').innerHTML='Password is strong';
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="frm">
+        Enter Password<input type="password" name="pwd" id="pwd" onkeyup="chekPass();"><span id="msg"></span>
+    </form>
+    <script>
+        for(const i=1; i<=5; i++){
+            console.log(i);
+        }
+        console.log(i);
+    </script>
+    
+</body>
+</html>
